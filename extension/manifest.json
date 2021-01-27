@@ -1,0 +1,22 @@
+{
+  "name": "Filter AWS SAML",
+  "version": "1.0",
+  "description": "Filters the list of AWS accounts on https://signin.aws.amazon.com/saml",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab"
+  ],
+  "web_accessible_resources": [
+    "event.js"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://signin.aws.amazon.com/saml*"
+      ],
+      "js": [
+        "filterScript.js"
+      ]
+    }
+  ]
+}
