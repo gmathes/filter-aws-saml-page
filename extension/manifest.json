@@ -1,8 +1,11 @@
 {
   "name": "Filter AWS SAML",
-  "version": "1.0",
+  "version": "0.1",
   "description": "Filters the list of AWS accounts on https://signin.aws.amazon.com/saml",
   "manifest_version": 2,
+  "icons": {
+    "128": "icon.png"
+  },
   "permissions": [
     "activeTab"
   ],
