@@ -6,9 +6,6 @@
   "icons": {
     "128": "icon.png"
   },
-  "permissions": [
-    "activeTab"
-  ],
   "web_accessible_resources": [
     "event.js"
   ],
