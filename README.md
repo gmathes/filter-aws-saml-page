@@ -2,7 +2,13 @@
 
 AWS' SAML landing page requires a lot of scrolling if you have a large number of accounts. This Chrome extension adds a text input that filters that list based on the account name or number.
 
-## Installing
+## Installation
+
+Available via the store: <https://chrome.google.com/webstore/detail/filter-aws-saml/affgmlhkgihiochggfipjpleddmnkkhc>
+
+### Manual install
+
+If you want to test changes, you can install locally:
 
 1. Clone this repo
 2. Open Chrome extensions <chrome://extensions/>
