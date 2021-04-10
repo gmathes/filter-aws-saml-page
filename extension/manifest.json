@@ -11,8 +11,9 @@
   ],
   "content_scripts": [
     {
+      "run_at": "document_start",
       "matches": [
-        "https://signin.aws.amazon.com/saml*"
+        "*://signin.aws.amazon.com/saml*"
       ],
       "js": [
         "filterScript.js"

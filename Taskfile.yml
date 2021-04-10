@@ -1,0 +1,11 @@
+version: "3"
+
+tasks:
+  zip:
+    desc: Zips extension source for upload to Chrome Web Store
+    cmds:
+      - zip -r extension.zip extension
+  firefox-sign:
+    desc: Signs extension for firefox. Requires APIKEY and APISECRET env variables
+    cmds:
+      - web-ext sign --api-key $APIKEY --api-secret $APISECRET --source-dir ../extension

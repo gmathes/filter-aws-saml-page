@@ -14,6 +14,7 @@ function add_filter() {
     textbox.setAttribute("id", "filter")
 
     label.setAttribute("style", "font-weight:normal");
+    setTimeout(() => {  console.log("Delay load!"); }, 2000);
 
     // grabbing the container div and putting it on top
     var main = document.getElementById("container");
