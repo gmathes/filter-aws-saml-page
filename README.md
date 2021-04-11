@@ -10,11 +10,7 @@ Available via the store: <https://chrome.google.com/webstore/detail/filter-aws-s
 
 ### Firefox
 
-1. Download the latest xpi file here: <https://github.com/gmathes/filter-aws-saml-page/tree/master/firefox/web-ext-artifacts>
-2. In Firefox, go to Add-Ons <about:addons>
-  - Click the Gear icon
-  - Install Add-on from File
-  - Choose the xpi file you downloaded
+Available as an add-on: <https://addons.mozilla.org/en-US/firefox/addon/filter-aws-saml/>
 
 ### Manual install
 
