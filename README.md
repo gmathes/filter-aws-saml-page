@@ -26,5 +26,6 @@ If you want to test changes, you can install locally:
 ## Usage
 
 Use filter box when logging into AWS through SAML to filter accounts by name.
+Use the "tab" key to cycle through filtered roles.
 Use the "enter" key to select the first filtered account and "enter" again to
 log in without using the mouse.
