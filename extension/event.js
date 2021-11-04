@@ -66,16 +66,8 @@ function select(event) {
   }
 
   if (event.key === "Enter") {
-    // Selects first filtered account
-    radio = filtered_accounts[0].getElementsByTagName('input');
-    if (!radio[0].checked) {
-      radio[0].checked = true;
-    }
-    // if already clicked, sign in
-    else {
-      var button = document.getElementById("signin_button");
-      button.click();
-    }
+    var button = document.getElementById("signin_button");
+    button.click();
   }
 }
 

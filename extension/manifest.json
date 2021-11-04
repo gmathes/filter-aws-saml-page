@@ -1,6 +1,6 @@
 {
   "name": "Filter AWS SAML",
-  "version": "0.3",
+  "version": "0.4",
   "description": "Filters the list of AWS accounts on https://signin.aws.amazon.com/saml",
   "manifest_version": 2,
   "icons": {
