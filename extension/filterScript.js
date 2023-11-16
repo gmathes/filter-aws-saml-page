@@ -1,44 +1,40 @@
-function add_filter() {
+function createTextInput(id, labelText, style) {
+  let label = document.createElement("label");
+  label.innerHTML = labelText;
+  label.htmlFor = id;
 
-  var textbox = document.createElement("input");
+  let textbox = document.createElement("input");
+  textbox.type = "text";
+  textbox.name = id;
+  textbox.id = id;
+  textbox.style = style;
 
-  //Create Labels
-  var label = document.createElement("Label");
-  label.innerHTML = "Filter";
+  return { label, textbox };
+}
 
-  //Assign different attributes to the input box
-  textbox.setAttribute("type", "text");
-  textbox.setAttribute("value", "");
-  textbox.setAttribute("name", "filter");
-  textbox.setAttribute("style", "width:200px");
-  textbox.setAttribute("id", "filter")
+function addFilter() {
+  const { label, textbox } = createTextInput("filter", "Filter", "width:200px");
+  label.style.fontWeight = "normal";
 
-  label.setAttribute("style", "font-weight:normal");
-  setTimeout(() => { console.log("Delay load!"); }, 2000);
-
-  // grabbing the container div and putting it on top
-  var main = document.getElementById("container");
-
-  // prepending the label and text box
-  main.prepend(label);
+  const main = document.getElementById("container");
   main.prepend(textbox);
+  main.prepend(label);
 
-  // putting cursor in text box
   textbox.focus();
   textbox.select();
 }
 
-function add_event() {
-  var s = document.createElement('script');
-  s.src = chrome.runtime.getURL('event.js');
-  s.onload = function () {
+function addEventScript() {
+  const script = document.createElement('script');
+  script.src = chrome.runtime.getURL('event.js');
+  script.onload = function () {
     this.remove();
   };
-  document.head.appendChild(s);
-  console.log("Added event script")
+  document.head.appendChild(script);
+  console.log("Added event script");
 }
 
 window.onload = function () {
-  add_filter();
-  add_event();
+  addFilter();
+  addEventScript();
 }

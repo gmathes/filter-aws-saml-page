@@ -1,11 +1,15 @@
 {
   "name": "Filter AWS SAML",
-  "version": "0.4",
+  "version": "0.5",
   "description": "Filters the list of AWS accounts on https://signin.aws.amazon.com/saml",
   "manifest_version": 2,
   "icons": {
     "128": "icon.png"
   },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
   "web_accessible_resources": [
     "event.js"
   ],
@@ -19,5 +23,19 @@
         "filterScript.js"
       ]
     }
-  ]
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": {
+      "128": "icon.png"
+    },
+    "default_title": "Open User URL"
+  }
 }
