@@ -9,4 +9,4 @@ tasks:
     desc: Signs extension for firefox. Requires APIKEY and APISECRET env variables
     dir: firefox
     cmds:
-      - web-ext build --source-dir ../extension
+      - web-ext build --source-dir ../extension --overwrite-dest
